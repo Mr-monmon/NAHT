@@ -210,13 +210,13 @@ const RegistrationForm = ({ onBackToHome }: RegistrationFormProps) => {
             <div className="flex items-center space-x-4 space-x-reverse">
               {/* NAHT Logo */}
               <img 
-                src="https://alamlms.ams3.digitaloceanspaces.com/training/public/ksa-tourismtraining/uploads/settings/9f69519bcd592462a4871dcecb68bdda.png" 
+                src="/logo/logo_2.png" 
                 alt="الأكاديمية الوطنية العالي للتدريب" 
                 className="h-10 w-auto"
               />
               {/* Green Circle Logo */}
               <img 
-                src="https://sa.grcico.com/storage/logo-greencircle.png" 
+                src="/logo/logo_1.png" 
                 alt="الدائرة الخضراء للأمن السيبراني" 
                 className="h-10 w-auto"
               />
