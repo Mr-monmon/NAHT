@@ -76,7 +76,7 @@ const NonSpecialistsPage = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-4 space-x-reverse">
               <img 
-                src="https://sa.grcico.com/storage/logo-greencircle.png" 
+                src="/logo/logo_1.png" 
                 alt="الدائرة الخضراء للأمن السيبراني" 
                 className="h-10 w-auto"
               />
