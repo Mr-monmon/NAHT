@@ -62,7 +62,7 @@ const NonSpecialistsBanner = () => {
               {/* Provider Info */}
               <div className="mt-6 flex items-center justify-center lg:justify-start gap-3">
                 <img 
-                  src="https://sa.grcico.com/storage/logo-greencircle.png" 
+                  src="/logo/logo_1.png" 
                   alt="الدائرة الخضراء للأمن السيبراني" 
                   className="h-8 w-auto"
                 />
