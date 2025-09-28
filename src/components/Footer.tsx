@@ -50,8 +50,8 @@ const Footer = ({ onRegisterClick }: FooterProps) => {
             <div className="md:col-span-2">
               <div className="mb-6">
                 <div className="flex items-center space-x-4 space-x-reverse mb-4">
-                  <img src="/logo/logo_2.png" alt="الأكاديمية الوطنية العالي للتدريب" className="h-12 w-auto" />
-                  <img src="/logo/logo_1.png" alt="الدائرة الخضراء للأمن السيبراني" className="h-12 w-auto" />
+                  <img src="/logo/logo_w2.png" alt="الأكاديمية الوطنية العالي للتدريب" className="h-12 w-auto" />
+                  <img src="/logo/logo_w1.png" alt="الدائرة الخضراء للأمن السيبراني" className="h-12 w-auto" />
 
                 </div>
                 <h3 className="text-xl font-bold mb-2">برنامج مشترك</h3>
