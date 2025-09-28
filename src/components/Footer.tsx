@@ -51,14 +51,14 @@ const Footer = ({ onRegisterClick }: FooterProps) => {
               <div className="mb-6">
                 <div className="flex items-center space-x-4 space-x-reverse mb-4">
                   <img 
-                    src="https://alamlms.ams3.digitaloceanspaces.com/training/public/ksa-tourismtraining/uploads/settings/9f69519bcd592462a4871dcecb68bdda.png" 
-                    alt="الأكاديمية الوطنية العالي للتدريب" 
-                    className="h-12 w-auto"
+                      src="/naht.png" 
+                      alt="الأكاديمية الوطنية العالي للتدريب" 
+                      className="h-12 w-auto"
                   />
                   <img 
-                    src="https://sa.grcico.com/storage/logo-greencircle.png" 
-                    alt="الدائرة الخضراء للأمن السيبراني" 
-                    className="h-12 w-auto"
+                      src="/greencircle.png" 
+                      alt="الدائرة الخضراء للأمن السيبراني" 
+                      className="h-12 w-auto"
                   />
                 </div>
                 <h3 className="text-xl font-bold mb-2">برنامج مشترك</h3>
