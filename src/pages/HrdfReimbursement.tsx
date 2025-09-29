@@ -1,8 +1,14 @@
 import React from "react";
-import { UserPlus, MousePointerClick, MonitorSmartphone, FileSignature, Stamp, Paperclip, CreditCard, Clock, CalendarDays, ExternalLink, Phone, Mail, Download, ArrowRight } from "lucide-react";
+import {
+  UserPlus, MousePointerClick, MonitorSmartphone, FileSignature,
+  Stamp, Paperclip, CreditCard, Clock, CalendarDays, ExternalLink,
+  Phone, Mail, Download, ArrowRight
+} from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 export default function HrdfReimbursement() {
+  const navigate = useNavigate();
+
   return (
     <main dir="rtl" className="min-h-screen bg-slate-900 text-slate-100">
       {/* Hero */}
@@ -31,68 +37,22 @@ export default function HrdfReimbursement() {
       <section className="max-w-6xl mx-auto px-4 pb-8">
         <h2 className="text-2xl md:text-3xl font-bold mb-6">من خلال الخطوات التالية:</h2>
         <div className="grid md:grid-cols-3 gap-4">
-          {/* 01 */}
-          <StepCard
-            no={1}
-            Icon={MonitorSmartphone}
-            title="إنشاء حساب في البوابة الوطنية"
-            desc="تسجيل المنشأة/الأفراد وتحديث بيانات الحساب البنكي (آيبان)."
-          />
-          {/* 02 */}
-          <StepCard
-            no={2}
-            Icon={MousePointerClick}
-            title="تقديم الطلب من خلال الصفحة الخاصة بالبرنامج"
-            desc="اختيار البرنامج التدريبي المعتمد وإرساله للمراجعة."
-          />
-          {/* 03 */}
-          <StepCard
-            no={3}
-            Icon={FileSignature}
-            title="توقيع إقرار إلكتروني"
-            desc="إقرار صحة الشهادة واعتمادها من الصندوق أو من يفوضه."
-          />
-          {/* 04 */}
-          <StepCard
-            no={4}
-            Icon={Stamp}
-            title="توقيع إقرار بعدم قيام جهة العمل بالدفع"
-            desc="تأكيد أن المتقدّم هو من سدّد التكاليف وليس جهة العمل."
-          />
-          {/* 05 */}
-          <StepCard
-            no={5}
-            Icon={Paperclip}
-            title="رفع المطالبة عبر النظام"
-            desc="إرفاق الفاتورة وإشعار السداد وصورة الشهادة التي حصل عليها المستفيد."
-          />
-          {/* 06 */}
-          <StepCard
-            no={6}
-            Icon={CreditCard}
-            title="تحويل التعويض مباشرة إلى الآيبان"
-            desc="يتم الإيداع في حساب الفرد عبر الرقم الدولي (IBAN) بعد الموافقة."
-          />
+          <StepCard no={1} Icon={MonitorSmartphone} title="إنشاء حساب في البوابة الوطنية" desc="تسجيل المنشأة/الأفراد وتحديث بيانات الحساب البنكي (آيبان)." />
+          <StepCard no={2} Icon={MousePointerClick} title="تقديم الطلب من خلال الصفحة الخاصة بالبرنامج" desc="اختيار البرنامج التدريبي المعتمد وإرساله للمراجعة." />
+          <StepCard no={3} Icon={FileSignature} title="توقيع إقرار إلكتروني" desc="إقرار صحة الشهادة واعتمادها من الصندوق أو من يفوضه." />
+          <StepCard no={4} Icon={Stamp} title="توقيع إقرار بعدم قيام جهة العمل بالدفع" desc="تأكيد أن المتقدّم هو من سدّد التكاليف وليس جهة العمل." />
+          <StepCard no={5} Icon={Paperclip} title="رفع المطالبة عبر النظام" desc="إرفاق الفاتورة وإشعار السداد وصورة الشهادة التي حصل عليها المستفيد." />
+          <StepCard no={6} Icon={CreditCard} title="تحويل التعويض مباشرة إلى الآيبان" desc="يتم الإيداع في حساب الفرد عبر الرقم الدولي (IBAN) بعد الموافقة." />
         </div>
-      
+      </section>
 
       {/* Timing / SLAs */}
       <section className="max-w-6xl mx-auto px-4 pb-12">
         <div className="grid md:grid-cols-2 gap-4">
-          <InfoCard
-            Icon={Clock}
-            title="الوقت المستغرق لدراسة الأهلية"
-            highlight="حتى 40 يومًا"
-            desc="يُحتسب من تاريخ التقديم على البرنامج واستكمال البيانات."
-          />
-          <InfoCard
-            Icon={CalendarDays}
-            title="تاريخ الصرف"
-            highlight="حتى 40 يومًا"
-            desc="من تاريخ التقديم في حال اكتمال المتطلبات وقبول المطالبة."
-          />
+          <InfoCard Icon={Clock} title="الوقت المستغرق لدراسة الأهلية" highlight="حتى 40 يومًا" desc="يُحتسب من تاريخ التقديم على البرنامج واستكمال البيانات." />
+          <InfoCard Icon={CalendarDays} title="تاريخ الصرف" highlight="حتى 40 يومًا" desc="من تاريخ التقديم في حال اكتمال المتطلبات وقبول المطالبة." />
         </div>
-      
+      </section>
 
       {/* Downloads */}
       <section className="max-w-6xl mx-auto px-4 pb-12">
@@ -129,7 +89,8 @@ export default function HrdfReimbursement() {
           </div>
         </div>
       </section>
-        {/* زر العودة للتسجيل */}
+
+      {/* زر العودة للتسجيل */}
       <div className="max-w-6xl mx-auto px-4 pb-20 text-center">
         <button
           onClick={() => navigate("/register")}
@@ -138,7 +99,7 @@ export default function HrdfReimbursement() {
           العودة للتسجيل
           <ArrowRight className="w-5 h-5" />
         </button>
-      </div>  
+      </div>
     </main>
   );
 }
