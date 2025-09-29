@@ -461,7 +461,7 @@ const RegistrationForm = ({ onBackToHome }: RegistrationFormProps) => {
                   />
                   <span className="text-gray-700 leading-relaxed">
                     أوافق على سياسة الخصوصية ومعالجة بياناتي الشخصية للتواصل حول البرامج التدريبية والتسجيل. 
-                    <a href="#" className="text-emerald-600 hover:text-emerald-700 underline">اقرأ سياسة الخصوصية</a>
+                    <a href="/privacy" className="text-emerald-600 hover:text-emerald-700 underline"> اقرأ سياسة الخصوصية</a>
                   </span>
                 </label>
                 {errors.agree && <p className="text-red-600 text-sm mt-2">{errors.agree}</p>}
