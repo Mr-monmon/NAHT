@@ -1,5 +1,6 @@
 import React from "react";
-import { UserPlus, MousePointerClick, MonitorSmartphone, FileSignature, Stamp, Paperclip, CreditCard, Clock, CalendarDays, ExternalLink, Phone, Mail, Download } from "lucide-react";
+import { UserPlus, MousePointerClick, MonitorSmartphone, FileSignature, Stamp, Paperclip, CreditCard, Clock, CalendarDays, ExternalLink, Phone, Mail, Download, ArrowRigh } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function HrdfReimbursement() {
   return (
@@ -73,7 +74,7 @@ export default function HrdfReimbursement() {
             desc="يتم الإيداع في حساب الفرد عبر الرقم الدولي (IBAN) بعد الموافقة."
           />
         </div>
-      </section>
+      
 
       {/* Timing / SLAs */}
       <section className="max-w-6xl mx-auto px-4 pb-12">
@@ -91,7 +92,7 @@ export default function HrdfReimbursement() {
             desc="من تاريخ التقديم في حال اكتمال المتطلبات وقبول المطالبة."
           />
         </div>
-      </section>
+      
 
       {/* Downloads */}
       <section className="max-w-6xl mx-auto px-4 pb-12">
@@ -128,6 +129,16 @@ export default function HrdfReimbursement() {
           </div>
         </div>
       </section>
+        {/* زر العودة للتسجيل */}
+      <div className="max-w-6xl mx-auto px-4 pb-20 text-center">
+        <button
+          onClick={() => navigate("/register")}
+          className="bg-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-500 transition-all duration-300 flex items-center gap-2 shadow-md mx-auto"
+        >
+          العودة للتسجيل
+          <ArrowRight className="w-5 h-5" />
+        </button>
+      </div>  
     </main>
   );
 }
