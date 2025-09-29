@@ -88,7 +88,7 @@ const Footer = ({ onRegisterClick }: FooterProps) => {
               <div className="space-y-3">
                 <div className="flex items-center">
                   <Phone className="w-4 h-4 text-emerald-400 ml-2" />
-                  <span className="text-gray-400 text-sm">0112093090</span>
+                  <span className="text-gray-400 text-sm">0538889708</span>
                 </div>
                 <div className="flex items-center">
                   <Phone className="w-4 h-4 text-emerald-400 ml-2" />
