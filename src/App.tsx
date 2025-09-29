@@ -16,6 +16,7 @@ import Footer from './components/Footer';
 import RegistrationForm from './components/RegistrationForm';
 import NonSpecialistsPage from './pages/NonSpecialistsPage';
 import HrdfReimbursement from './pages/HrdfReimbursement';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function App() {
   const [showRegistrationForm, setShowRegistrationForm] = useState(false);
@@ -33,29 +34,31 @@ function App() {
   }
 
 return (
-  <Routes>
-    <Route path="/non-specialists" element={<NonSpecialistsPage />} />
-    <Route path="/hrdf" element={<HrdfReimbursement />} />   {/* الجديد */}
-    <Route path="/register" element={<RegistrationForm onBackToHome={() => window.location.href = '/'} />} />
-    <Route
-      path="/*"
-      element={
-        <div className="min-h-screen bg-gray-50 font-cairo">
-          <Header />
-          <Hero onRegisterClick={() => setShowRegistrationForm(true)} />
-          <NonSpecialistsBanner />
-          <WhyNAHT />
-          <Programs onRegisterClick={() => setShowRegistrationForm(true)} />
-          <PricingTable />
-          <WhatYouLearn />
-          <EnrollmentProcess onRegisterClick={() => setShowRegistrationForm(true)} />
-          <TargetAudience />
-          <FAQ />
-          <Footer onRegisterClick={() => setShowRegistrationForm(true)} />
-        </div>
-      }
-    />
-  </Routes>
+<Routes>
+  <Route path="/non-specialists" element={<NonSpecialistsPage />} />
+  <Route path="/hrdf" element={<HrdfReimbursement />} />   {/* صفحة آلية التعويض */}
+  <Route path="/privacy" element={<PrivacyPolicy />} />    {/* صفحة سياسة الخصوصية */}
+  <Route path="/register" element={<RegistrationForm onBackToHome={() => window.location.href = '/'} />} />
+  <Route
+    path="/*"
+    element={
+      <div className="min-h-screen bg-gray-50 font-cairo">
+        <Header />
+        <Hero onRegisterClick={() => setShowRegistrationForm(true)} />
+        <NonSpecialistsBanner />
+        <WhyNAHT />
+        <Programs onRegisterClick={() => setShowRegistrationForm(true)} />
+        <PricingTable />
+        <WhatYouLearn />
+        <EnrollmentProcess onRegisterClick={() => setShowRegistrationForm(true)} />
+        <TargetAudience />
+        <FAQ />
+        <Footer onRegisterClick={() => setShowRegistrationForm(true)} />
+      </div>
+    }
+  />
+</Routes>
+
 );
 
 }
