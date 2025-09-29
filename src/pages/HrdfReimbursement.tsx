@@ -1,5 +1,5 @@
 import React from "react";
-import { UserPlus, MousePointerClick, MonitorSmartphone, FileSignature, Stamp, Paperclip, CreditCard, Clock, CalendarDays, ExternalLink, Phone, Mail, Download, ArrowRigh } from "lucide-react";
+import { UserPlus, MousePointerClick, MonitorSmartphone, FileSignature, Stamp, Paperclip, CreditCard, Clock, CalendarDays, ExternalLink, Phone, Mail, Download, ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 export default function HrdfReimbursement() {
