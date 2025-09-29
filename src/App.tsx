@@ -15,6 +15,7 @@ import TargetAudience from './components/TargetAudience';
 import Footer from './components/Footer';
 import RegistrationForm from './components/RegistrationForm';
 import NonSpecialistsPage from './pages/NonSpecialistsPage';
+import HrdfReimbursement from './pages/HrdfReimbursement';
 
 function App() {
   const [showRegistrationForm, setShowRegistrationForm] = useState(false);
@@ -31,11 +32,14 @@ function App() {
     return <RegistrationForm onBackToHome={() => setShowRegistrationForm(false)} />;
   }
 
-  return (
-    <Routes>
-      <Route path="/non-specialists" element={<NonSpecialistsPage />} />
-      <Route path="/register" element={<RegistrationForm onBackToHome={() => window.location.href = '/'} />} />
-      <Route path="/*" element={
+return (
+  <Routes>
+    <Route path="/non-specialists" element={<NonSpecialistsPage />} />
+    <Route path="/hrdf" element={<HrdfReimbursement />} />   {/* الجديد */}
+    <Route path="/register" element={<RegistrationForm onBackToHome={() => window.location.href = '/'} />} />
+    <Route
+      path="/*"
+      element={
         <div className="min-h-screen bg-gray-50 font-cairo">
           <Header />
           <Hero onRegisterClick={() => setShowRegistrationForm(true)} />
@@ -49,9 +53,11 @@ function App() {
           <FAQ />
           <Footer onRegisterClick={() => setShowRegistrationForm(true)} />
         </div>
-      } />
-    </Routes>
-  );
+      }
+    />
+  </Routes>
+);
+
 }
 
 export default App;
