@@ -79,6 +79,8 @@ const Footer = ({ onRegisterClick }: FooterProps) => {
                 <li><a href="#pricing" className="text-gray-400 hover:text-white transition-colors">الأسعار</a></li>
                 <li><a href="#faq" className="text-gray-400 hover:text-white transition-colors">الأسئلة الشائعة</a></li>
                 <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">تواصل معنا</a></li>
+                <li><a href="/hrdf" className="text-gray-400 hover:text-emerald-500 transition-colors">آلية التعويض من هدف</a></li>
+
               </ul>
             </div>
 
